@@ -54,10 +54,10 @@ resource "yandex_compute_instance" "vm" {
       destination = "/root/.ssh/id_ed25519"
     }
 
-    provisioner "file" {
-      source      = "./yctoken"
-      destination = "/root/yctoken"
-    }
+    # provisioner "file" {
+    #   source      = "./yctoken"
+    #   destination = "/root/yctoken"
+    # }
 
     provisioner "file" {
       source      = "./cloudid"
